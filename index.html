@@ -19,16 +19,21 @@
             max-height: 500px; /* 이미지의 최대 높이를 500픽셀로 설정 */
             height: auto; /* 이미지의 높이를 자동으로 설정하여 비율 유지 */
             width: auto; /* 이미지의 너비를 자동으로 설정하여 비율 유지 */
+            cursor: pointer; /* 마우스 오버 시 포인터 커서로 변경 */
         }
     </style>
 </head>
 <body>
-    <img src="https://github.com/yeah4671/ADDICT/raw/e990cafeb45c6abd523131ca72c9ed5ddfb1145c/%E1%84%8C%E1%85%A1%E1%84%89%E1%85%A1%E1%86%AB%201.png" id="main-image" alt="Descriptive Alt Text">
+    <img src="https://github.com/yeah4671/ADDICT/raw/e990cafeb45c6abd523131ca72c9ed5ddfb1145c/%E1%84%8C%E1%85%A1%E1%84%89%E1%85%A1%E1%86%AB%201.png" id="main-image" alt="Descriptive Alt Text" onclick="navigateToNewImage();">
 
     <script>
         window.onload = function() {
             document.getElementById('main-image').style.opacity = 1;
         };
+
+        function navigateToNewImage() {
+            window.location.href = 'https://github.com/yeah4671/ADDICT/blob/c3f0a348ceb52f0f23bf5388af6c2d6f00894f9b/%E1%84%8C%E1%85%A1%E1%84%89%E1%85%A1%E1%86%AB%203.png';
+        }
     </script>
 </body>
 </html>
