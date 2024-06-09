@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In Image on Load</title>
+    <style>
+        #main-image {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="your-image.png" id="main-image" alt="Descriptive Alt Text">
+
+    <script>
+        window.onload = function() {
+            document.getElementById('main-image').style.opacity = 1;
+        };
+    </script>
+</body>
+</html>
